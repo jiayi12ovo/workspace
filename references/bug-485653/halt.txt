@@ -1,0 +1,542 @@
+17763.468506] x86: Booting SMP configuration:
+[17763.468506] smpboot: Booting Node 0 Processor 1 APIC 0x2
+[17763.468762] microcode: CPU1: patch_level=0x91000002
+[17763.470969] ACPI: \_SB_.C002: Found 2 idle states
+[17763.471145] CPU1 is up
+[17763.471159] smpboot: Booting Node 0 Processor 2 APIC 0x4
+[17763.471298] microcode: CPU2: patch_level=0x91000002
+[17763.473493] ACPI: \_SB_.C004: Found 2 idle states
+[17763.473839] CPU2 is up
+[17763.473852] smpboot: Booting Node 0 Processor 3 APIC 0x6
+[17763.474330] microcode: CPU3: patch_level=0x91000002
+[17763.476539] ACPI: \_SB_.C006: Found 2 idle states
+[17763.476734] CPU3 is up
+[17763.476746] smpboot: Booting Node 0 Processor 4 APIC 0x8
+[17763.477534] microcode: CPU4: patch_level=0x91000002
+[17763.479812] ACPI: \_SB_.C008: Found 2 idle states
+[17763.480026] CPU4 is up
+[17763.480042] smpboot: Booting Node 0 Processor 5 APIC 0xa
+[17763.480222] microcode: CPU5: patch_level=0x91000002
+[17763.482459] ACPI: \_SB_.C00A: Found 2 idle states
+[17763.482685] CPU5 is up
+[17763.482697] smpboot: Booting Node 0 Processor 6 APIC 0xc
+[17763.483644] microcode: CPU6: patch_level=0x91000002
+[17763.485888] ACPI: \_SB_.C00C: Found 2 idle states
+[17763.486140] CPU6 is up
+[17763.486154] smpboot: Booting Node 0 Processor 7 APIC 0xe
+[17763.486343] microcode: CPU7: patch_level=0x91000002
+[17763.488569] ACPI: \_SB_.C00E: Found 2 idle states
+[17763.488791] CPU7 is up
+[17763.488803] smpboot: Booting Node 0 Processor 8 APIC 0x1
+[17763.488927] microcode: CPU8: patch_level=0x91000002
+[17763.491174] ACPI: \_SB_.C001: Found 2 idle states
+[17763.491540] Spectre V2 : Update user space SMT mitigation: STIBP always-on
+[17763.491552] CPU8 is up
+[17763.491587] smpboot: Booting Node 0 Processor 9 APIC 0x3
+[17763.491700] microcode: CPU9: patch_level=0x91000002
+[17763.493926] ACPI: \_SB_.C003: Found 2 idle states
+[17763.494194] CPU9 is up
+[17763.494207] smpboot: Booting Node 0 Processor 10 APIC 0x5
+[17763.494318] microcode: CPU10: patch_level=0x91000002
+[17763.496544] ACPI: \_SB_.C005: Found 2 idle states
+[17763.496833] CPU10 is up
+[17763.496845] smpboot: Booting Node 0 Processor 11 APIC 0x7
+[17763.497583] microcode: CPU11: patch_level=0x91000002
+[17763.499813] ACPI: \_SB_.C007: Found 2 idle states
+[17763.500105] CPU11 is up
+[17763.500116] smpboot: Booting Node 0 Processor 12 APIC 0x9
+[17763.500262] microcode: CPU12: patch_level=0x91000002
+[17763.502498] ACPI: \_SB_.C009: Found 2 idle states
+[17763.502807] CPU12 is up
+[17763.502821] smpboot: Booting Node 0 Processor 13 APIC 0xb
+[17763.504226] microcode: CPU13: patch_level=0x91000002
+[17763.506483] ACPI: \_SB_.C00B: Found 2 idle states
+[17763.506822] CPU13 is up
+[17763.506834] smpboot: Booting Node 0 Processor 14 APIC 0xd
+[17763.508201] microcode: CPU14: patch_level=0x91000002
+[17763.510460] ACPI: \_SB_.C00D: Found 2 idle states
+[17763.510816] CPU14 is up
+[17763.510833] smpboot: Booting Node 0 Processor 15 APIC 0xf
+[17763.511653] microcode: CPU15: patch_level=0x91000002
+[17763.513924] ACPI: \_SB_.C00F: Found 2 idle states
+[17763.514306] CPU15 is up
+[17763.515854] ACPI: Waking up from system sleep state S4
+[17763.650614] fxpm, fxgmac_resume callin
+[17763.650696] usb usb1: root hub lost power or was reset
+[17763.650697] usb usb2: root hub lost power or was reset
+[17763.650698] fxgmac_net_powerup callin
+[17763.650698] fxgmac start callin here.
+[17763.650701] [68048] xhci_resume:1204: xhci_hcd 0000:05:00.1: Stop HCD
+[17763.650702] CHIP_RESET 0x80000000
+[17763.650703] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Halt the HC
+[17763.650706] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Reset the HC
+[17763.650752] arise info: pci device(vendor:0x6766, device:0x3D02) pm restore
+[17763.650753] arise info: gfx driver resume back.
+[17763.650790] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Wait for controller to be ready for doorbell rings
+[17763.650841] [GFDISP] General Info:  Firmware timing table version:GA0215PN Build Time: Oct 31 2024 15:11:08 
+[17763.650916] [68048] xhci_resume:1211: xhci_hcd 0000:05:00.1: // Disabling event ring interrupts
+[17763.650918] [68048] xhci_resume:1217: xhci_hcd 0000:05:00.1: cleaning up memory
+[17763.650925] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed event ring
+[17763.650928] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed command ring
+[17763.651019] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed segment pool
+[17763.651023] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed device context pool
+[17763.651024] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed small stream array pool
+[17763.651025] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Freed medium stream array pool
+[17763.651072] [68048] xhci_resume:1220: xhci_hcd 0000:05:00.1: xhci_stop completed - status = 11
+[17763.651073] [68048] xhci_resume:1227: xhci_hcd 0000:05:00.1: Initialize the xhci_hcd
+[17763.651074] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: xhci_init
+[17763.651075] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: xHCI doesn't need link TRB QUIRK
+[17763.651076] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Supported page size register = 0x1
+[17763.651077] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Supported page size of 4K
+[17763.651078] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: HCD page size set to 4K
+[17763.651082] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // xHC can handle at most 64 device slots.
+[17763.651084] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Setting Max device slots reg = 0x40.
+[17763.651090] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Device context base array address = 0xffe58000 (DMA), 00000000c5ba455a (virt)
+[17763.651094] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Allocated command ring at 00000000ecbbf546
+[17763.651095] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: First segment DMA is 0xffe27000
+[17763.651096] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Setting command ring address to 0x00000000ffe27001
+[17763.651099] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Doorbell array is located at offset 0x2000 from cap regs base addr
+[17763.651099] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Allocating event ring
+[17763.651102] [68048] xhci_check_trb_in_td_math:2093: xhci_hcd 0000:05:00.1: TRB math tests passed.
+[17763.651104] usb usb3: root hub lost power or was reset
+[17763.651105] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Write ERST size = 1 to ir_set 0 (some bits preserved)
+[17763.651106] usb usb4: root hub lost power or was reset
+[17763.651106] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Set ERST entries to point to event ring.
+[17763.651107] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Set ERST base address for ir_set 0 = 0xff8d0000
+[17763.651109] [10974] xhci_resume:1204: xhci_hcd 0000:05:00.2: Stop HCD
+[17763.651110] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Write event ring dequeue pointer, preserving EHB bit
+[17763.651111] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Halt the HC
+[17763.651112] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Wrote ERST address to ir_set 0.
+[17763.651113] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Allocating 2 scratchpad buffers
+[17763.651114] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Reset the HC
+[17763.651123] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Ext Cap 000000007594717b, port offset = 1, count = 6, revision = 0x2
+[17763.651124] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: xHCI 1.0: support USB2 hardware lpm
+[17763.651127] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Ext Cap 000000008b7a19c1, port offset = 7, count = 1, revision = 0x3
+[17763.651128] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651130] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651132] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Ext Cap 0000000025e13e4c, port offset = 8, count = 1, revision = 0x3
+[17763.651134] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651135] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651138] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Ext Cap 00000000d3011442, port offset = 9, count = 1, revision = 0x3
+[17763.651139] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651140] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651143] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Ext Cap 00000000e0ffa70a, port offset = 10, count = 1, revision = 0x3
+[17763.651144] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651145] [68048] xhci_add_in_port:2211: xhci_hcd 0000:05:00.1: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651146] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Found 6 USB 2.0 ports and 4 USB 3.0 ports.
+[17763.651148] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Finished xhci_init
+[17763.651149] [68048] xhci_resume:1233: xhci_hcd 0000:05:00.1: Start the primary HCD
+[17763.651150] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: xhci_run
+[17763.651199] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Wait for controller to be ready for doorbell rings
+[17763.651335] [10974] xhci_resume:1211: xhci_hcd 0000:05:00.2: // Disabling event ring interrupts
+[17763.651338] [10974] xhci_resume:1217: xhci_hcd 0000:05:00.2: cleaning up memory
+[17763.651343] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed event ring
+[17763.651345] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed command ring
+[17763.651348] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed segment pool
+[17763.651350] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed device context pool
+[17763.651351] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed small stream array pool
+[17763.651352] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Freed medium stream array pool
+[17763.651380] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: ERST deq = 64'hffb7f000
+[17763.651381] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Set the interrupt modulation register
+[17763.651383] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Finished xhci_run for main hcd
+[17763.651408] [10974] xhci_resume:1220: xhci_hcd 0000:05:00.2: xhci_stop completed - status = 1
+[17763.651409] [10974] xhci_resume:1227: xhci_hcd 0000:05:00.2: Initialize the xhci_hcd
+[17763.651410] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: xhci_init
+[17763.651411] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: xHCI doesn't need link TRB QUIRK
+[17763.651413] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Supported page size register = 0x1
+[17763.651414] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Supported page size of 4K
+[17763.651415] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: HCD page size set to 4K
+[17763.651416] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // xHC can handle at most 64 device slots.
+[17763.651418] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Setting Max device slots reg = 0x40.
+[17763.651421] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Device context base array address = 0xff651000 (DMA), 00000000e17665b7 (virt)
+[17763.651425] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Allocated command ring at 00000000580c7465
+[17763.651426] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: First segment DMA is 0xff64f000
+[17763.651428] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Setting command ring address to 0x00000000ff64f001
+[17763.651431] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Doorbell array is located at offset 0x2000 from cap regs base addr
+[17763.651432] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Allocating event ring
+[17763.651434] [10974] xhci_check_trb_in_td_math:2093: xhci_hcd 0000:05:00.2: TRB math tests passed.
+[17763.651436] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Write ERST size = 1 to ir_set 0 (some bits preserved)
+[17763.651437] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Set ERST entries to point to event ring.
+[17763.651438] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Set ERST base address for ir_set 0 = 0xfffea000
+[17763.651441] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Write event ring dequeue pointer, preserving EHB bit
+[17763.651442] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Wrote ERST address to ir_set 0.
+[17763.651443] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Allocating 2 scratchpad buffers
+[17763.651452] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Ext Cap 00000000b1c0a14c, port offset = 1, count = 6, revision = 0x2
+[17763.651453] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: xHCI 1.0: support USB2 hardware lpm
+[17763.651455] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Ext Cap 0000000087d213f8, port offset = 7, count = 1, revision = 0x3
+[17763.651457] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651459] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651459] [68048] xhci_resume:1236: xhci_hcd 0000:05:00.1: Start the secondary HCD
+[17763.651461] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Enable interrupts
+[17763.651462] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Ext Cap 0000000086a1b2f1, port offset = 8, count = 1, revision = 0x3
+[17763.651463] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Enable primary interrupter
+[17763.651464] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651465] [68048] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Turn on HC, cmd = 0x5.
+[17763.651466] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651469] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Ext Cap 00000000c3787c45, port offset = 9, count = 1, revision = 0x3
+[17763.651472] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651474] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651475] [68048] xhci_resume:1288: xhci_hcd 0000:05:00.1: xhci_resume: starting port polling.
+[17763.651477] <intr> handle_port_status:1702: xhci_hcd 0000:05:00.1: Port change event, 1-1, id 1, portsc: 0x206e1
+[17763.651478] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Ext Cap 00000000306d6d94, port offset = 10, count = 1, revision = 0x3
+[17763.651479] <intr> handle_port_status:1708: xhci_hcd 0000:05:00.1: resume root hub
+[17763.651480] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:4 PSIE:3 PLT:0 PFD:1 LP:0 PSIM:5
+[17763.651481] <intr> handle_port_status:1823: xhci_hcd 0000:05:00.1: handle_port_status: starting port polling.
+[17763.651482] [10974] xhci_add_in_port:2211: xhci_hcd 0000:05:00.2: PSIV:5 PSIE:3 PLT:0 PFD:1 LP:1 PSIM:10
+[17763.651483] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Found 6 USB 2.0 ports and 4 USB 3.0 ports.
+[17763.651486] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Finished xhci_init
+[17763.651487] [68048] xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17763.651488] [10974] xhci_resume:1233: xhci_hcd 0000:05:00.2: Start the primary HCD
+[17763.651489] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: xhci_run
+[17763.651503] [25751] hcd_bus_resume:2183: usb usb2: usb resume
+[17763.651504] [10949] hcd_bus_resume:2183: usb usb1: usb resume
+[17763.651511] [25751] hub_reset_resume:3888: hub 2-0:1.0: hub_reset_resume
+[17763.651514] [25751] hub_power_on:918: hub 2-0:1.0: trying to enable port power on non-switchable hub
+[17763.651520] [25751] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 2-1 ON, portsc: 0x2b0
+[17763.651534] [25751] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 2-2 ON, portsc: 0x2a0
+[17763.651545] [25751] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 2-3 ON, portsc: 0x2a0
+[17763.651551] sd 0:0:0:0: [sda] Starting disk
+[17763.651553] [25751] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 2-4 ON, portsc: 0x2a0
+[17763.651675] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: ERST deq = 64'hff64e000
+[17763.651676] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Set the interrupt modulation register
+[17763.651678] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Finished xhci_run for main hcd
+[17763.651758] [10974] xhci_resume:1236: xhci_hcd 0000:05:00.2: Start the secondary HCD
+[17763.651759] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Enable interrupts
+[17763.651760] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: Enable primary interrupter
+[17763.651762] [10974] xhci_dbg_trace:31: xhci_hcd 0000:05:00.2: // Turn on HC, cmd = 0x5.
+[17763.651767] [10974] xhci_resume:1288: xhci_hcd 0000:05:00.2: xhci_resume: starting port polling.
+[17763.651770] [10974] xhci_hub_status_data:1542: xhci_hcd 0000:05:00.2: xhci_hub_status_data: stopping port polling.
+[17763.651772] [10974] xhci_hub_status_data:1542: xhci_hcd 0000:05:00.2: xhci_hub_status_data: stopping port polling.
+[17763.651779] [13383] hcd_bus_resume:2183: usb usb4: usb resume
+[17763.651780] [53491] hcd_bus_resume:2183: usb usb3: usb resume
+[17763.651800] [13383] hub_reset_resume:3888: hub 4-0:1.0: hub_reset_resume
+[17763.651818] [13383] hub_power_on:918: hub 4-0:1.0: trying to enable port power on non-switchable hub
+[17763.651866] [53491] hub_reset_resume:3888: hub 3-0:1.0: hub_reset_resume
+[17763.651868] [13383] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 4-1 ON, portsc: 0x2a0
+[17763.651868] [53491] hub_power_on:918: hub 3-0:1.0: trying to enable port power on non-switchable hub
+[17763.651882] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-1 ON, portsc: 0x2a0
+[17763.651895] [13383] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 4-2 ON, portsc: 0x2a0
+[17763.651898] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-2 ON, portsc: 0x2a0
+[17763.651908] [13383] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 4-3 ON, portsc: 0x2a0
+[17763.651913] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-3 ON, portsc: 0x2a0
+[17763.651920] [13383] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 4-4 ON, portsc: 0x2a0
+[17763.651929] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-4 ON, portsc: 0x2a0
+[17763.651936] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-5 ON, portsc: 0x2a0
+[17763.651949] [53491] xhci_set_port_power:582: xhci_hcd 0000:05:00.2: set port power 3-6 ON, portsc: 0x2a0
+[17763.656210] snd_hda_codec_senarytech hdaudioC1D0: senary_auto_resume
+[17763.656731] arise info: disp cbios_init_hw finished.
+[17763.656732] arise info: drm resume: enable and post chip finished.
+[17763.656737] arise info: drm resume: re-enable irq finished.
+[17763.656739] arise info: pm_restore_state enter, cur time 16895858(ms)
+[17763.656741] arise info: init engine power status: 0xff
+[17763.656742] arise info: glb_init_chip_interface finish, cur time 16895858(ms)
+[17763.661582] [10949] hub_reset_resume:3888: hub 1-0:1.0: hub_reset_resume
+[17763.661584] [10949] hub_power_on:918: hub 1-0:1.0: trying to enable port power on non-switchable hub
+[17763.661588] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-1 ON, portsc: 0x206e1
+[17763.661601] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-2 ON, portsc: 0x2a0
+[17763.661609] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-3 ON, portsc: 0x2a0
+[17763.661616] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-4 ON, portsc: 0x2a0
+[17763.661622] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-5 ON, portsc: 0x2a0
+[17763.661629] [10949] xhci_set_port_power:582: xhci_hcd 0000:05:00.1: set port power 1-6 ON, portsc: 0x2a0
+[17763.662673] fxgmac_write_ephy_reg id 16,  ok,  ctrl=0x08100204,  data=0x0000006a
+[17763.662700] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x00000052
+[17763.662750] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x0000231d
+[17763.662775] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x00000051
+[17763.662800] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x000004a9
+[17763.662827] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x00000057
+[17763.662852] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x0000274c
+[17763.662876] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x00000012
+[17763.662926] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x000024c0
+[17763.663005] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x0000a00c
+[17763.663029] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x00002600
+[17763.663054] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x0000a00d
+[17763.663078] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x00001800
+[17763.663103] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x0000a00e
+[17763.663129] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x00000000
+[17763.663187] fxgmac_write_ephy_reg id 30,  ok,  ctrl=0x081e0204,  data=0x00000027
+[17763.663237] fxgmac_write_ephy_reg id 31,  ok,  ctrl=0x081f0204,  data=0x0000a812
+[17763.663266] fxgmac_dismiss_all_int callin 4
+[17763.663266] fxgmac hw init call in
+[17763.663270] fxgmac_flush_tx_queues, reg=0x00000000235072c0, val=0x001f0009
+[17763.663324] fxgmac_flush_tx_queues wait... reg=0x00000000235072c0, ... val=0x00000000
+[17763.663397] enable_rss callout, set val = 0x80001807
+[17763.663960] yt6801 0000:02:00.0 eno1: 1 Tx hardware queues,
+[17763.663960] yt6801 0000:02:00.0 eno1:  8192 byte fifo per queue
+[17763.663971] yt6801 0000:02:00.0 eno1: 4 Rx hardware queues,
+[17763.663971] yt6801 0000:02:00.0 eno1:  8192 byte fifo per queue
+[17763.664099] fxgmac_write_ephy_reg id 4,  ok,  ctrl=0x08040204,  data=0x00001de1
+[17763.664105] fxgmac enable rx checksum, set val = 8008000.
+[17763.664109] fxgmac_update_vlan_hash_tabl done,hash tbl=00000000.
+[17763.664114] fxgmac enable MAC rx vlan stripping , set val = 1700000
+[17763.664175] fxgmac_write_ephy_reg id 18,  ok,  ctrl=0x08120204,  data=0x00000c00
+[17763.664175] fxgmac hw init callout
+[17763.664177] napi_enable, msix ch0 napi enabled done,add=1
+[17763.664177] napi_enable, msix ch1 napi enabled done,add=1
+[17763.664178] napi_enable, msix ch2 napi enabled done,add=1
+[17763.664178] napi_enable, msix ch3 napi enabled done,add=1
+[17763.664196] fxgmac_req_irqs, MSIx irq_tx request ok, ch=0, irq=60,eno1-ch0-Tx-0
+[17763.664246] fxgmac_req_irqs, MSIx irq request ok, total=4,56~59
+[17763.664300] fxgmac_write_ephy_reg id 0,  ok,  ctrl=0x08000204,  data=0x00001140
+[17763.664350] fxgmac_write_ephy_reg id 9,  ok,  ctrl=0x08090204,  data=0x00000200
+[17763.664400] fxgmac_write_ephy_reg id 4,  ok,  ctrl=0x08040204,  data=0x00001de1
+[17763.664450] fxgmac_write_ephy_reg id 0,  ok,  ctrl=0x08000204,  data=0x00009140
+[17763.664505] fxgmac_phy_timer started, 1003f4ec2
+[17763.664508] fxgmac_net_powerup callout, powerstate=2.
+[17763.664511] fxpm, fxgmac_resume callout
+[17763.666536] nvme nvme0: 8/0/0 default/read/poll queues
+[17763.758083] [25751] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-1 read: 0x2f0, return 0x2f0
+[17763.758089] [13383] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 4-1 read: 0x2a0, return 0x2a0
+[17763.758094] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-1 read: 0x2a0, return 0x100
+[17763.758102] [25751] hub_activate:1128: usb usb2-port1: status 02f0 change 0000
+[17763.758104] [13383] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 4-2 read: 0x2a0, return 0x2a0
+[17763.758107] [25751] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-2 read: 0x2a0, return 0x2a0
+[17763.758113] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-2 read: 0x2a0, return 0x100
+[17763.758115] [13383] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 4-3 read: 0x2a0, return 0x2a0
+[17763.758120] [25751] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-3 read: 0x2a0, return 0x2a0
+[17763.758124] [13383] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 4-4 read: 0x2a0, return 0x2a0
+[17763.758126] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-3 read: 0x2a0, return 0x100
+[17763.758127] [25751] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-4 read: 0x2a0, return 0x2a0
+[17763.758135] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-4 read: 0x2a0, return 0x100
+[17763.758143] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-5 read: 0x2a0, return 0x100
+[17763.758149] [53491] xhci_hub_control:1165: xhci_hcd 0000:05:00.2: Get port status 3-6 read: 0x2a0, return 0x100
+[17763.758507] <intr> handle_port_status:1702: xhci_hcd 0000:05:00.1: Port change event, 2-1, id 7, portsc: 0x2a1203
+[17763.758508] <intr> handle_port_status:1823: xhci_hcd 0000:05:00.1: handle_port_status: starting port polling.
+[17763.768603] arise info: vidmm_restore finish, cur time 16895970(ms)
+[17763.768606] arise info: reg_Mxu_Dec_Ctrl.uint 0x8 readvalue: 0x8 
+[17763.768608] arise info: reg_Bl_Size.uint 0x1000002 readvalue: 0x1000002, Invalid BL enable:1 
+[17763.769603] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-1 read: 0x206e1, return 0x10101
+[17763.769619] [10949] hub_activate:1128: usb usb1-port1: status 0101 change 0001
+[17763.769623] [10949] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 connect change, portsc: 0x6e1
+[17763.769635] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-2 read: 0x2a0, return 0x100
+[17763.769643] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-3 read: 0x2a0, return 0x100
+[17763.769650] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-4 read: 0x2a0, return 0x100
+[17763.769656] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-5 read: 0x2a0, return 0x100
+[17763.769662] [10949] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-6 read: 0x2a0, return 0x100
+[17763.841646] <intr> xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17763.865679] [74362] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-1 read: 0x2a1203, return 0x310203
+[17763.865693] [74362] wait_for_connected:3572: usb 2-1: Waited 0ms for CONNECT
+[17763.865698] [74362] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 connect change, portsc: 0x281203
+[17763.865708] [74362] finish_port_resume:3454: usb 2-1: finish reset-resume
+[17763.865712] [74362] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-1 read: 0x281203, return 0x300203
+[17763.865718] [74362] xhci_hub_control:1355: xhci_hcd 0000:05:00.1: set port reset, actual port 0 status  = 0x281311
+[17763.878115] [31551] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-1 read: 0x6e1, return 0x101
+[17763.878132] [31551] wait_for_connected:3572: usb 1-1: Waited 0ms for CONNECT
+[17763.878134] [31551] finish_port_resume:3454: usb 1-1: finish reset-resume
+[17763.882526] <intr> xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17763.934067] [74362] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-1 read: 0x281203, return 0x300203
+[17763.934079] [74362] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 reset change, portsc: 0x81203
+[17763.934088] [74362] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 warm(BH) reset change, portsc: 0x1203
+[17763.934094] [74362] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 link state change, portsc: 0x1203
+[17763.934101] [74362] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 connect change, portsc: 0x1203
+[17763.934105] [74362] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 2-1 read: 0x1203, return 0x203
+[17763.963047] ata2: SATA link down (SStatus 0 SControl 300)
+[17763.963749] ata3: SATA link down (SStatus 0 SControl 300)
+[17763.966540] ata4: SATA link down (SStatus 0 SControl 300)
+[17763.994518] [74362] xhci_discover_or_reset_device:3781: xhci_hcd 0000:05:00.1: The device to be reset with slot ID 0 does not exist. Re-allocate the device
+[17763.994522] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17763.994547] [74362] xhci_alloc_virt_device:996: xhci_hcd 0000:05:00.1: Slot 1 output ctx = 0xff963000 (dma)
+[17763.994549] [74362] xhci_alloc_virt_device:1004: xhci_hcd 0000:05:00.1: Slot 1 input ctx = 0xff847000 (dma)
+[17763.994553] [74362] xhci_alloc_virt_device:1025: xhci_hcd 0000:05:00.1: Set slot id 1 dcbaa entry 000000006bb3f58c to 0xff963000
+[17763.994589] [74362] xhci_setup_addressable_virt_dev:1159: xhci_hcd 0000:05:00.1: Set root hub portnum to 7
+[17763.994590] [74362] xhci_setup_addressable_virt_dev:1160: xhci_hcd 0000:05:00.1: Set fake root hub portnum to 1
+[17763.994591] [74362] xhci_setup_addressable_virt_dev:1199: xhci_hcd 0000:05:00.1: udev->tt = 000000009ae84101
+[17763.994592] [74362] xhci_setup_addressable_virt_dev:1200: xhci_hcd 0000:05:00.1: udev->ttport = 0x0
+[17763.994593] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17763.994612] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup address command
+[17763.994614] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17763.994615] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 1 dcbaa entry @000000006bb3f58c = 0x000000ff963000
+[17763.994616] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xff963000
+[17763.994617] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 1
+[17763.994621] usb 2-1: reset SuperSpeed Gen 1 USB device number 2 using xhci_hcd
+[17764.015346] [31551] xhci_hub_control:1355: xhci_hcd 0000:05:00.1: set port reset, actual port 0 status  = 0x6f1
+[17764.015705] [74362] xhci_add_endpoint:1963: xhci_hcd 0000:05:00.1: add ep 0x81, slot id 1, new drop flags = 0x0, new add flags = 0x8
+[17764.015708] [74362] xhci_check_bandwidth:2924: xhci_hcd 0000:05:00.1: xhci_check_bandwidth called for udev 0000000003583d4d
+[17764.015710] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.020109] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17764.020327] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.020337] <intr> handle_tx_event:2511: xhci_hcd 0000:05:00.1: Stopped on No-op or Link TRB for slot 1 ep 2
+[17764.020342] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.035532] [74362] hub_reset_resume:3888: hub 2-1:1.0: hub_reset_resume
+[17764.035552] [74362] xhci_update_hub_device:5182: xhci_hcd 0000:05:00.1: xHCI version 110 needs hub TT think time and number of ports
+[17764.035554] [74362] xhci_update_hub_device:5207: xhci_hcd 0000:05:00.1: Set up configure endpoint for hub device.
+[17764.035556] [74362] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.035573] [74362] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17764.035574] [74362] hub_power_on:916: hub 2-1:1.0: enabling power on all ports
+[17764.066068] <intr> handle_port_status:1702: xhci_hcd 0000:05:00.1: Port change event, 1-1, id 1, portsc: 0x200e03
+[17764.066071] <intr> handle_port_status:1823: xhci_hcd 0000:05:00.1: handle_port_status: starting port polling.
+[17764.081588] [31551] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-1 read: 0x200e03, return 0x100503
+[17764.082082] [31551] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 reset change, portsc: 0xe03
+[17764.089580] <intr> xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17764.090062] <intr> xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17764.122085] ata1: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[17764.141585] [31551] xhci_discover_or_reset_device:3781: xhci_hcd 0000:05:00.1: The device to be reset with slot ID 0 does not exist. Re-allocate the device
+[17764.141589] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.142093] [31551] xhci_alloc_virt_device:996: xhci_hcd 0000:05:00.1: Slot 2 output ctx = 0xff9e6000 (dma)
+[17764.142100] [31551] xhci_alloc_virt_device:1004: xhci_hcd 0000:05:00.1: Slot 2 input ctx = 0xff8a0000 (dma)
+[17764.142106] [31551] xhci_alloc_virt_device:1025: xhci_hcd 0000:05:00.1: Set slot id 2 dcbaa entry 00000000beb2ef92 to 0xff9e6000
+[17764.142151] usb 1-1: reset high-speed USB device number 2 using xhci_hcd
+[17764.142154] [31551] xhci_setup_addressable_virt_dev:1159: xhci_hcd 0000:05:00.1: Set root hub portnum to 1
+[17764.142155] [31551] xhci_setup_addressable_virt_dev:1160: xhci_hcd 0000:05:00.1: Set fake root hub portnum to 1
+[17764.142157] [31551] xhci_setup_addressable_virt_dev:1199: xhci_hcd 0000:05:00.1: udev->tt = 000000009ae84101
+[17764.142158] [31551] xhci_setup_addressable_virt_dev:1200: xhci_hcd 0000:05:00.1: udev->ttport = 0x0
+[17764.142159] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.142181] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup context command
+[17764.142183] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17764.142185] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 2 dcbaa entry @00000000beb2ef92 = 0x000000ff9e6000
+[17764.142187] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xff9e6000
+[17764.142188] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 0
+[17764.142262] <intr> process_ctrl_td:2198: xhci_hcd 0000:05:00.1: Waiting for status stage event
+[17764.142414] [31551] xhci_hub_control:1355: xhci_hcd 0000:05:00.1: set port reset, actual port 0 status  = 0xef1
+[17764.192686] <intr> handle_port_status:1702: xhci_hcd 0000:05:00.1: Port change event, 1-1, id 1, portsc: 0x200e03
+[17764.192689] <intr> handle_port_status:1823: xhci_hcd 0000:05:00.1: handle_port_status: starting port polling.
+[17764.210080] [31551] xhci_hub_control:1165: xhci_hcd 0000:05:00.1: Get port status 1-1 read: 0x200e03, return 0x100503
+[17764.210109] [31551] xhci_clear_port_change_bit:553: xhci_hcd 0000:05:00.1: clear port1 reset change, portsc: 0xe03
+[17764.237803] ata1.00: configured for UDMA/133
+[17764.269659] [31551] xhci_discover_or_reset_device:3819: xhci_hcd 0000:05:00.1: Resetting device with slot ID 2
+[17764.269663] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.269672] <intr> xhci_handle_cmd_reset_dev:1369: xhci_hcd 0000:05:00.1: Completed reset device command.
+[17764.269676] [31551] xhci_discover_or_reset_device:3860: xhci_hcd 0000:05:00.1: Can't reset device (slot ID 2) in default state
+[17764.269677] [31551] xhci_discover_or_reset_device:3863: xhci_hcd 0000:05:00.1: Not freeing device rings.
+[17764.269679] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.269763] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup address command
+[17764.269765] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17764.269766] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 2 dcbaa entry @00000000beb2ef92 = 0x000000ff9e6000
+[17764.269767] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xff9e6000
+[17764.269768] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 2
+[17764.291016] [31551] xhci_drop_endpoint:1794: xhci_hcd 0000:05:00.1: xhci_drop_endpoint called for udev 00000000a319e9e9
+[17764.291046] [31551] xhci_add_endpoint:1963: xhci_hcd 0000:05:00.1: add ep 0x81, slot id 2, new drop flags = 0x0, new add flags = 0x8
+[17764.291047] [31551] xhci_check_bandwidth:2924: xhci_hcd 0000:05:00.1: xhci_check_bandwidth called for udev 00000000a319e9e9
+[17764.291049] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.291384] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17764.291520] [31551] xhci_drop_endpoint:1794: xhci_hcd 0000:05:00.1: xhci_drop_endpoint called for udev 00000000a319e9e9
+[17764.291529] [31551] xhci_drop_endpoint:1839: xhci_hcd 0000:05:00.1: drop ep 0x81, slot id 2, new drop flags = 0x8, new add flags = 0x0
+[17764.291537] [31551] xhci_add_endpoint:1963: xhci_hcd 0000:05:00.1: add ep 0x81, slot id 2, new drop flags = 0x8, new add flags = 0x8
+[17764.291539] [31551] xhci_check_bandwidth:2924: xhci_hcd 0000:05:00.1: xhci_check_bandwidth called for udev 00000000a319e9e9
+[17764.291540] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.323443] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17764.323889] [31551] hub_reset_resume:3888: hub 1-1:1.0: hub_reset_resume
+[17764.323897] [31551] xhci_update_hub_device:5182: xhci_hcd 0000:05:00.1: xHCI version 110 needs hub TT think time and number of ports
+[17764.323898] [31551] xhci_update_hub_device:5207: xhci_hcd 0000:05:00.1: Set up configure endpoint for hub device.
+[17764.323900] [31551] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.323912] [31551] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17764.323913] [31551] hub_power_on:916: hub 1-1:1.0: enabling power on all ports
+[17764.337583] <intr> xhci_hub_status_data:1542: xhci_hcd 0000:05:00.1: xhci_hub_status_data: stopping port polling.
+[17764.474265] [31551] hub_activate:1128: usb 1-1-port2: status 0100 change 0000
+[17764.474637] [31551] hub_activate:1128: usb 1-1-port3: status 0301 change 0001
+[17764.582274] [27203] wait_for_connected:3572: usb 1-1.3: Waited 0ms for CONNECT
+[17764.582276] [27203] finish_port_resume:3454: usb 1-1.3: finish reset-resume
+[17764.843481] arise info: vidsch_restore finish, cur time 16897045(ms)
+[17764.850387] [27203] xhci_discover_or_reset_device:3781: xhci_hcd 0000:05:00.1: The device to be reset with slot ID 0 does not exist. Re-allocate the device
+[17764.850393] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.850410] [27203] xhci_alloc_virt_device:996: xhci_hcd 0000:05:00.1: Slot 3 output ctx = 0xffb41000 (dma)
+[17764.850417] [27203] xhci_alloc_virt_device:1004: xhci_hcd 0000:05:00.1: Slot 3 input ctx = 0xffb0f000 (dma)
+[17764.850421] [27203] xhci_alloc_virt_device:1025: xhci_hcd 0000:05:00.1: Set slot id 3 dcbaa entry 00000000f5eaf1f6 to 0xffb41000
+[17764.850456] usb 1-1.3: reset low-speed USB device number 3 using xhci_hcd
+[17764.850458] [27203] xhci_setup_addressable_virt_dev:1159: xhci_hcd 0000:05:00.1: Set root hub portnum to 1
+[17764.850459] [27203] xhci_setup_addressable_virt_dev:1160: xhci_hcd 0000:05:00.1: Set fake root hub portnum to 1
+[17764.850461] [27203] xhci_setup_addressable_virt_dev:1199: xhci_hcd 0000:05:00.1: udev->tt = 00000000c197338e
+[17764.850462] [27203] xhci_setup_addressable_virt_dev:1200: xhci_hcd 0000:05:00.1: udev->ttport = 0x3
+[17764.850463] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17764.850479] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup context command
+[17764.850480] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17764.850482] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 3 dcbaa entry @00000000f5eaf1f6 = 0x000000ffb41000
+[17764.850483] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xffb41000
+[17764.850484] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 0
+[17764.852652] <intr> process_ctrl_td:2198: xhci_hcd 0000:05:00.1: Waiting for status stage event
+[17765.118368] [27203] xhci_discover_or_reset_device:3819: xhci_hcd 0000:05:00.1: Resetting device with slot ID 3
+[17765.118373] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.118430] <intr> xhci_handle_cmd_reset_dev:1369: xhci_hcd 0000:05:00.1: Completed reset device command.
+[17765.118439] [27203] xhci_discover_or_reset_device:3860: xhci_hcd 0000:05:00.1: Can't reset device (slot ID 3) in default state
+[17765.118440] [27203] xhci_discover_or_reset_device:3863: xhci_hcd 0000:05:00.1: Not freeing device rings.
+[17765.118443] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.118709] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup address command
+[17765.118711] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17765.118713] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 3 dcbaa entry @00000000f5eaf1f6 = 0x000000ffb41000
+[17765.118714] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xffb41000
+[17765.118714] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 3
+[17765.145286] [27203] xhci_microframes_to_exponent:1263: usb 1-1.3: ep 0x81 - rounding interval to 64 microframes, ep desc says 80 microframes
+[17765.145329] [27203] xhci_add_endpoint:1963: xhci_hcd 0000:05:00.1: add ep 0x81, slot id 3, new drop flags = 0x0, new add flags = 0x8
+[17765.145330] [27203] xhci_microframes_to_exponent:1263: usb 1-1.3: ep 0x82 - rounding interval to 64 microframes, ep desc says 80 microframes
+[17765.145339] [27203] xhci_add_endpoint:1963: xhci_hcd 0000:05:00.1: add ep 0x82, slot id 3, new drop flags = 0x0, new add flags = 0x28
+[17765.145342] [27203] xhci_check_bandwidth:2924: xhci_hcd 0000:05:00.1: xhci_check_bandwidth called for udev 0000000030dea17d
+[17765.145345] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.156798] [27203] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful Endpoint Configure command
+[17765.157521] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.157532] <intr> handle_tx_event:2511: xhci_hcd 0000:05:00.1: Stopped on No-op or Link TRB for slot 3 ep 2
+[17765.157536] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.188800] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.188813] <intr> handle_tx_event:2511: xhci_hcd 0000:05:00.1: Stopped on No-op or Link TRB for slot 3 ep 4
+[17765.188817] [27203] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.350373] arise info: pending sleep finish
+[17765.378112] arise info: cm_restore() total cost 535ms, allocation_cnt-179
+[17765.378114] arise info: cm_restore finish, cur time 16897580(ms)
+[17765.378119] arise info: drm resume: restore drmfb status finished.
+[17765.378189] arise info: Task [rtcwake] set mode to crtc 1.
+[17765.378192] arise info: KMS set mode to path(iga_index-->active_device): 1-->0x1.
+[17765.378195] [GFDISP] General Info:  SourceMode: 1440 x 900!
+[17765.378196] [GFDISP] General Info:  DestMode:   1440 x 900 @ 5990!
+[17765.378196] [GFDISP] General Info:  ScalerMode: 1440 x 900!
+[17765.378197] [GFDISP] General Info:  Interlace=0, Signal=1, AsRatio=0, Bpc=8!
+[17765.378630] arise info: CRTC atomic enable: to turn on vblank and screen of crtc: 1
+[17765.378640] arise info: Task [rtcwake] turn on power of device: 0x1.
+[17765.378645] [GFDISP] General Info:  cbCRTPort_OnOff: status = On.
+[17765.378646] arise info: capture 8, event: 4 
+[17765.442577] [GFDISP] General Info:  cbDPPort_DeviceDetect: Device(0x8000) is not detected!
+[17765.442581] arise info: drm resume: restore display status finished.
+[17765.617943] [11804] wait_for_connected:3572: usb 1-1.2: Waited 740ms for CONNECT
+[17765.618139] [11804] finish_port_resume:3454: usb 1-1.2: finish reset-resume
+[17765.886372] [11804] xhci_discover_or_reset_device:3781: xhci_hcd 0000:05:00.1: The device to be reset with slot ID 0 does not exist. Re-allocate the device
+[17765.886377] [11804] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.886439] [11804] xhci_alloc_virt_device:996: xhci_hcd 0000:05:00.1: Slot 4 output ctx = 0xff7e2000 (dma)
+[17765.886448] [11804] xhci_alloc_virt_device:1004: xhci_hcd 0000:05:00.1: Slot 4 input ctx = 0xff7b8000 (dma)
+[17765.886455] [11804] xhci_alloc_virt_device:1025: xhci_hcd 0000:05:00.1: Set slot id 4 dcbaa entry 00000000fb65115b to 0xff7e2000
+[17765.886490] usb 1-1.2: reset low-speed USB device number 4 using xhci_hcd
+[17765.886492] [11804] xhci_setup_addressable_virt_dev:1159: xhci_hcd 0000:05:00.1: Set root hub portnum to 1
+[17765.886493] [11804] xhci_setup_addressable_virt_dev:1160: xhci_hcd 0000:05:00.1: Set fake root hub portnum to 1
+[17765.886495] [11804] xhci_setup_addressable_virt_dev:1199: xhci_hcd 0000:05:00.1: udev->tt = 00000000c197338e
+[17765.886496] [11804] xhci_setup_addressable_virt_dev:1200: xhci_hcd 0000:05:00.1: udev->ttport = 0x2
+[17765.886497] [11804] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17765.886513] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Successful setup context command
+[17765.886515] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Op regs DCBAA ptr = 0x000000ffe58000
+[17765.886516] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Slot ID 4 dcbaa entry @00000000fb65115b = 0x000000ff7e2000
+[17765.886517] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Output Context DMA address = 0xff7e2000
+[17765.886518] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Internal device address = 0
+[17771.078369] [11804] xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Cancel URB 00000000ae46b358, dev 1.2, ep 0x0, starting at offset 0xffb08000
+[17771.078374] [11804] xhci_ring_cmd_db:304: xhci_hcd 0000:05:00.1: // Ding dong!
+[17776.198475] xhci_hcd 0000:05:00.1: xHCI host not responding to stop endpoint command.
+[17776.198480] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: // Halt the HC
+[17776.208562] xhci_hcd 0000:05:00.1: xHCI host controller not responding, assume dead
+[17776.208564] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 1, ep index 0
+[17776.208566] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 1, ep index 2
+[17776.208571] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 2, ep index 0
+[17776.208572] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 2, ep index 2
+[17776.208575] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 3, ep index 0
+[17776.208576] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 3, ep index 2
+[17776.208578] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 3, ep index 4
+[17776.208580] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: Killing URBs for slot ID 4, ep index 0
+[17776.208585] xhci_hcd 0000:05:00.1: HC died; cleaning up
+[17776.208592] <intr> xhci_dbg_trace:31: xhci_hcd 0000:05:00.1: xHCI host controller is dead.
+[17776.208629] [11804] usb_start_wait_urb:66: usb 1-1.2: kworker/u32:78 timed out on ep0in len=0/64
+[17776.208635] [11804] hub_port_logical_disconnect:965: usb 1-1-port2: logical disconnect
+[17776.208637] [11804] finish_port_resume:3502: usb 1-1.2: gone after usb resume? status -19
+[17776.208639] [11804] usb_port_resume:3684: usb 1-1.2: can't resume, status -19
+[17776.208639] [11804] hub_port_logical_disconnect:965: usb 1-1-port2: logical disconnect
+[17776.209429] PM: Basic memory bitmaps freed
+[17776.209430] OOM killer enabled.
+[17776.209431] Restarting tasks ... 
+[17776.209505] [24565] hub_event:5505: hub 4-0:1.0: state 7 ports 4 chg 0000 evt 0000
+[17776.209525] [106164] hub_event:5505: hub 2-0:1.0: state 0 ports 4 chg 0002 evt 0002
+[17776.209527] [44393] hub_event:5505: hub 1-0:1.0: state 0 ports 6 chg 0002 evt 0000
+[17776.209530] usb 2-1: USB disconnect, device number 2
+[17776.209531] usb 1-1: USB disconnect, device number 2
+[17776.209533] usb 1-1.2: USB disconnect, device number 4
+[17776.209535] [44393] usb_disconnect:2238: usb 1-1.2: unregistering device
+[17776.209536] [106164] usb_disconnect:2238: usb 2-1: unregistering device
+[17776.209538] [106164] usb_disable_device:1406: usb 2-1: unregistering interface 2-1:1.0
+[17776.209539] [44393] usb_disable_device:1406: usb 1-1.2: unregistering interface 1-1.2:1.0
+[17776.209588] arise info: dma fence thread resumed!
+[17776.209654] [13572] hub_event:5505: hub 1-1:1.0: state 0 ports 4 chg 000c evt 0004
+[17776.209692] [106164] usb_disable_device:1429: usb 2-1: usb_disable_device nuking all URBs
+[17776.209731] [22740] hub_event:5505: usb 2-1:1.0: state 0 ports 0 chg 0000 evt 0000
+[17776.211448] done.
+[17776.211454] PM: hibernation exit

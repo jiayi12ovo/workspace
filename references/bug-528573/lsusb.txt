@@ -1,0 +1,62 @@
+/:  Bus 001.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 001: Dev 002, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 2a7a:6a08  
+    |__ Port 001: Dev 002, If 1, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 2a7a:6a08  
+/:  Bus 002.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 5000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 003.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 002: Dev 010, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M
+        ID 413c:301a Dell Computer Corp. Dell MS116 Optical Mouse
+    |__ Port 003: Dev 009, If 0, Class=Vendor Specific Class, Driver=rtw_8821cu, 480M
+        ID 0bda:c811 Realtek Semiconductor Corp. 
+/:  Bus 004.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 005.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+    |__ Port 003: Dev 002, If 0, Class=Hub, Driver=hub/4p, 480M
+        ID 05e3:0610 Genesys Logic, Inc. Hub
+        |__ Port 001: Dev 004, If 0, Class=Audio, Driver=snd-usb-audio, 12M
+            ID 31b2:0020  
+        |__ Port 001: Dev 004, If 1, Class=Audio, Driver=snd-usb-audio, 12M
+            ID 31b2:0020  
+        |__ Port 001: Dev 004, If 2, Class=Audio, Driver=snd-usb-audio, 12M
+            ID 31b2:0020  
+        |__ Port 001: Dev 004, If 3, Class=Human Interface Device, Driver=usbhid, 12M
+            ID 31b2:0020  
+    |__ Port 004: Dev 003, If 0, Class=Communications, Driver=rndis_host, 480M
+        ID 0525:a4ad Netchip Technology, Inc. 
+    |__ Port 004: Dev 003, If 1, Class=CDC Data, Driver=rndis_host, 480M
+        ID 0525:a4ad Netchip Technology, Inc. 
+    |__ Port 004: Dev 003, If 2, Class=Human Interface Device, Driver=usbhid, 480M
+        ID 0525:a4ad Netchip Technology, Inc. 
+    |__ Port 004: Dev 003, If 3, Class=Human Interface Device, Driver=usbhid, 480M
+        ID 0525:a4ad Netchip Technology, Inc. 
+/:  Bus 006.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 007.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 008.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+/:  Bus 009.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 480M
+    ID 1d6b:0002 Linux Foundation 2.0 root hub
+/:  Bus 010.Port 001: Dev 001, Class=root_hub, Driver=xhci_hcd/4p, 10000M
+    ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 2a7a:6a08  U
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 009: ID 0bda:c811 Realtek Semiconductor Corp. 802.11ac NIC
+Bus 003 Device 010: ID 413c:301a Dell Computer Corp. Dell MS116 Optical Mouse
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 002: ID 05e3:0610 Genesys Logic, Inc. Hub
+Bus 005 Device 003: ID 0525:a4ad Netchip Technology, Inc. Composite Gadget
+Bus 005 Device 004: ID 31b2:0020 Hifi 384Khz Type-C Audio Audio fs 1.0
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 009 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 010 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
