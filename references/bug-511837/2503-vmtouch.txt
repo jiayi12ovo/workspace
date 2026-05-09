@@ -1,0 +1,39 @@
+kylin@kylin-pc:~$ sudo vmtouch -v /opt/ /usr/share/ /usr/lib 2>/dev/null | sort -hr -k4 | head -50
+输入密码        
+  Resident Pages: 832063/3877120  3G/14G  21.5%
+[OOOOOOOOOOOOOOOOOo    oOOOOOOOOo                oOOOOOOOOOOO] 4360/6848
+[OOOOOOOOOo             oOOOOOOOOo                   oOOOOOOO] 2879/6464
+/usr/share/typora/resources/Docs/img/Touch Bar Shot 2017-02-28 at 00.40.32.png
+[OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO          O O] 87/109
+/opt/kingsoft/wps-office/office6/document theme/theme fonts/Office 2.xml
+/usr/share/zx-gmilib/example/zx_gmilib_demo.c
+/usr/share/zx-gmilib/example/Makefile
+/usr/share/zsh/vendor-completions/_vlc
+/usr/share/zsh/vendor-completions/_udevadm
+/usr/share/zsh/vendor-completions/_timedatectl
+/usr/share/zsh/vendor-completions/_systemd-tmpfiles
+/usr/share/zsh/vendor-completions/_systemd-run
+/usr/share/zsh/vendor-completions/_systemd-inhibit
+/usr/share/zsh/vendor-completions/_systemd-delta
+/usr/share/zsh/vendor-completions/_systemd-analyze
+/usr/share/zsh/vendor-completions/_systemd
+/usr/share/zsh/vendor-completions/_systemctl
+/usr/share/zsh/vendor-completions/_sd_unit_files
+/usr/share/zsh/vendor-completions/_sd_outputmodes
+/usr/share/zsh/vendor-completions/_sd_hosts_or_user_at_host
+/usr/share/zsh/vendor-completions/_resolvectl
+/usr/share/zsh/vendor-completions/_pulseaudio
+/usr/share/zsh/vendor-completions/_networkctl
+/usr/share/zsh/vendor-completions/_loginctl
+/usr/share/zsh/vendor-completions/_localectl
+/usr/share/zsh/vendor-completions/_kernel-install
+/usr/share/zsh/vendor-completions/_journalctl
+/usr/share/zsh/vendor-completions/_hostnamectl
+/usr/share/zsh/vendor-completions/_curl
+/usr/share/zsh/vendor-completions/_coredumpctl
+/usr/share/zsh/vendor-completions/_code
+/usr/share/zsh/vendor-completions/_busctl
+/usr/share/zsh/vendor-completions/_bootctl
+/usr/share/zsh/site-functions/_nvme
+/usr/share/zoneinfo/zone.tab
+
