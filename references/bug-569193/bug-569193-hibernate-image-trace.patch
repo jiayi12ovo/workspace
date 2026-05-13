@@ -1,0 +1,256 @@
+diff --git a/kernel/power/hibernate.c b/kernel/power/hibernate.c
+index 1bf0064..da28527 100644
+--- a/kernel/power/hibernate.c
++++ b/kernel/power/hibernate.c
+@@ -46,6 +46,7 @@ static unsigned int resume_delay;
+ static char resume_file[256] = CONFIG_PM_STD_PARTITION;
+ dev_t swsusp_resume_device;
+ sector_t swsusp_resume_block;
++bool hibernate_image_trace_enabled;
+ __visible int in_suspend __nosavedata;
+ 
+ static char hibernate_compressor[CRYPTO_MAX_ALG_NAME] = CONFIG_HIBERNATION_DEF_COMP;
+@@ -1248,12 +1249,37 @@ static ssize_t reserved_size_store(struct kobject *kobj,
+ 
+ power_attr(reserved_size);
+ 
++static ssize_t hibernate_image_trace_show(struct kobject *kobj,
++					  struct kobj_attribute *attr,
++					  char *buf)
++{
++	return sprintf(buf, "%d\n", hibernate_image_trace_enabled ? 1 : 0);
++}
++
++static ssize_t hibernate_image_trace_store(struct kobject *kobj,
++					   struct kobj_attribute *attr,
++					   const char *buf, size_t n)
++{
++	unsigned int val;
++
++	if (sscanf(buf, "%u", &val) != 1 || val > 1)
++		return -EINVAL;
++
++	hibernate_image_trace_enabled = val;
++	return n;
++}
++
++power_attr(hibernate_image_trace);
++power_attr_ro(hibernate_image_trace_stats);
++
+ static struct attribute * g[] = {
+ 	&disk_attr.attr,
+ 	&resume_offset_attr.attr,
+ 	&resume_attr.attr,
+ 	&image_size_attr.attr,
+ 	&reserved_size_attr.attr,
++	&hibernate_image_trace_attr.attr,
++	&hibernate_image_trace_stats_attr.attr,
+ 	NULL,
+ };
+ 
+diff --git a/kernel/power/power.h b/kernel/power/power.h
+index 15cd91a..a311aca 100644
+--- a/kernel/power/power.h
++++ b/kernel/power/power.h
+@@ -104,6 +104,10 @@ static struct kobj_attribute _name##_attr = {	\
+ extern unsigned long image_size;
+ /* Size of memory reserved for drivers (default SPARE_PAGES x PAGE_SIZE) */
+ extern unsigned long reserved_size;
++extern bool hibernate_image_trace_enabled;
++extern ssize_t hibernate_image_trace_stats_show(struct kobject *kobj,
++						struct kobj_attribute *attr,
++						char *buf);
+ extern int in_suspend;
+ extern dev_t swsusp_resume_device;
+ extern sector_t swsusp_resume_block;
+diff --git a/kernel/power/snapshot.c b/kernel/power/snapshot.c
+index 574bbc3..67b8822 100644
+--- a/kernel/power/snapshot.c
++++ b/kernel/power/snapshot.c
+@@ -31,6 +31,7 @@
+ #include <linux/compiler.h>
+ #include <linux/ktime.h>
+ #include <linux/set_memory.h>
++#include <linux/string.h>
+ 
+ #include <linux/uaccess.h>
+ #include <asm/mmu_context.h>
+@@ -1428,6 +1429,142 @@ static inline int copy_data_page(unsigned long dst_pfn, unsigned long src_pfn)
+ }
+ #endif /* CONFIG_HIGHMEM */
+ 
++struct hibernate_image_trace_stats {
++	u64 total;
++	u64 copied;
++	u64 zero;
++	u64 anon;
++	u64 shmem;
++	u64 mapped_file;
++	u64 file_clean;
++	u64 file_dirty;
++	u64 slab;
++	u64 pagetable;
++	u64 reserved;
++	u64 kernel_other;
++	u64 unknown;
++};
++
++static struct hibernate_image_trace_stats hib_trace_stats;
++
++static void hibernate_image_trace_reset(void)
++{
++	memset(&hib_trace_stats, 0, sizeof(hib_trace_stats));
++}
++
++static u64 hibernate_image_trace_mb(u64 pages)
++{
++	return (pages * PAGE_SIZE) / (1024 * 1024);
++}
++
++static void hibernate_image_trace_account_page(struct page *page, bool zero)
++{
++	struct address_space *mapping;
++
++	page = compound_head(page);
++
++	hib_trace_stats.total++;
++	if (zero)
++		hib_trace_stats.zero++;
++	else
++		hib_trace_stats.copied++;
++
++	if (PageReserved(page)) {
++		hib_trace_stats.reserved++;
++		return;
++	}
++
++	if (PageSlab(page)) {
++		hib_trace_stats.slab++;
++		return;
++	}
++
++	if (PageTable(page)) {
++		hib_trace_stats.pagetable++;
++		return;
++	}
++
++	if (PageAnon(page)) {
++		hib_trace_stats.anon++;
++		return;
++	}
++
++	if (PageSwapBacked(page)) {
++		hib_trace_stats.shmem++;
++		return;
++	}
++
++	mapping = page_mapping(page);
++	if (mapping) {
++		if (page_mapped(page))
++			hib_trace_stats.mapped_file++;
++		else if (PageDirty(page))
++			hib_trace_stats.file_dirty++;
++		else
++			hib_trace_stats.file_clean++;
++		return;
++	}
++
++	hib_trace_stats.kernel_other++;
++}
++
++static void hibernate_image_trace_print(void)
++{
++#define HIB_TRACE_PRINT(_name)						\
++	pr_info("  %-13s %10llu pages %8llu MB\n", #_name ":",		\
++		(unsigned long long)hib_trace_stats._name,		\
++		(unsigned long long)hibernate_image_trace_mb(		\
++			hib_trace_stats._name))
++
++	pr_info("Hibernate image page breakdown:\n");
++	HIB_TRACE_PRINT(total);
++	HIB_TRACE_PRINT(copied);
++	HIB_TRACE_PRINT(zero);
++	HIB_TRACE_PRINT(anon);
++	HIB_TRACE_PRINT(shmem);
++	HIB_TRACE_PRINT(mapped_file);
++	HIB_TRACE_PRINT(file_clean);
++	HIB_TRACE_PRINT(file_dirty);
++	HIB_TRACE_PRINT(slab);
++	HIB_TRACE_PRINT(pagetable);
++	HIB_TRACE_PRINT(reserved);
++	HIB_TRACE_PRINT(kernel_other);
++	HIB_TRACE_PRINT(unknown);
++
++#undef HIB_TRACE_PRINT
++}
++
++ssize_t hibernate_image_trace_stats_show(struct kobject *kobj,
++					 struct kobj_attribute *attr, char *buf)
++{
++	int len = 0;
++
++#define HIB_TRACE_APPEND(_name)						\
++	len += scnprintf(buf + len, PAGE_SIZE - len,			\
++			 "%-13s %10llu pages %8llu MB\n", #_name,	\
++			 (unsigned long long)hib_trace_stats._name,	\
++			 (unsigned long long)hibernate_image_trace_mb(	\
++				hib_trace_stats._name))
++
++	HIB_TRACE_APPEND(total);
++	HIB_TRACE_APPEND(copied);
++	HIB_TRACE_APPEND(zero);
++	HIB_TRACE_APPEND(anon);
++	HIB_TRACE_APPEND(shmem);
++	HIB_TRACE_APPEND(mapped_file);
++	HIB_TRACE_APPEND(file_clean);
++	HIB_TRACE_APPEND(file_dirty);
++	HIB_TRACE_APPEND(slab);
++	HIB_TRACE_APPEND(pagetable);
++	HIB_TRACE_APPEND(reserved);
++	HIB_TRACE_APPEND(kernel_other);
++	HIB_TRACE_APPEND(unknown);
++
++#undef HIB_TRACE_APPEND
++
++	return len;
++}
++
+ /*
+  * Copy data pages will copy all pages into pages pulled from the copy_bm.
+  * If a page was entirely filled with zeros it will be marked in the zero_bm.
+@@ -1459,10 +1596,16 @@ static unsigned long copy_data_pages(struct memory_bitmap *copy_bm,
+ 		if (unlikely(pfn == BM_END_OF_MAP))
+ 			break;
+ 		if (copy_data_page(copy_pfn, pfn)) {
++			if (hibernate_image_trace_enabled)
++				hibernate_image_trace_account_page(
++					pfn_to_page(pfn), true);
+ 			memory_bm_set_bit(zero_bm, pfn);
+ 			/* Use this copy_pfn for a page that is not full of zeros */
+ 			continue;
+ 		}
++		if (hibernate_image_trace_enabled)
++			hibernate_image_trace_account_page(pfn_to_page(pfn),
++							  false);
+ 		copied_pages++;
+ 		copy_pfn = memory_bm_next_pfn(copy_bm);
+ 	}
+@@ -2049,6 +2192,8 @@ asmlinkage __visible int swsusp_save(void)
+ 	 * Kill them.
+ 	 */
+ 	drain_local_pages(NULL);
++	if (hibernate_image_trace_enabled)
++		hibernate_image_trace_reset();
+ 	nr_copy_pages = copy_data_pages(&copy_bm, &orig_bm, &zero_bm);
+ 
+ 	/*
+@@ -2063,6 +2208,8 @@ asmlinkage __visible int swsusp_save(void)
+ 	nr_meta_pages = DIV_ROUND_UP(nr_pages * sizeof(long), PAGE_SIZE);
+ 
+ 	pr_info("Hibernation image created (%d pages copied, %d zero pages)\n", nr_copy_pages, nr_zero_pages);
++	if (hibernate_image_trace_enabled)
++		hibernate_image_trace_print();
+ 
+ 	return 0;
+ }
+

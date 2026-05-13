@@ -1,0 +1,133 @@
+root@ky2503rc2-pc:/home/ky2503rc2/桌面# echo 3 > /proc/sys/vm/drop_caches 
+root@ky2503rc2-pc:/home/ky2503rc2/桌面# ./analyze_cache.sh 
+========================================
+  系统页缓存分析 (buff/cache)
+========================================
+
+[1/6] 检查依赖工具...
+  依赖检查通过
+
+[2/6] 整体内存/cache 概况
+              总计         已用        空闲      共享    缓冲/缓存    可用
+内存：        15Gi       1.6Gi        12Gi        43Mi       715Mi        13Gi
+交换：        18Gi          0B        18Gi
+
+--- 精确值 (/proc/meminfo) ---
+  MemTotal:          15862744 kB
+  MemFree:           13433300 kB
+  MemAvailable:      13824916 kB
+  Buffers:              14404 kB
+  Cached:              636992 kB
+  Shmem:                44828 kB
+  SReclaimable:         81728 kB
+
+  buff/cache 合计: 715 MB
+    其中 Buffers(块设备缓冲):    14 MB
+    其中 SReclaimable(slab):     79 MB
+    其中 Cached(文件页缓存):     622 MB
+
+[3/6] Slab 缓存 (SReclaimable) 分析
+  (dentry=目录项缓存, inode=索引节点缓存)
+  kernfs_node_cache              objects=   95422  obj_size=98490  pages=2.29446e+06
+  vm_area_struct                 objects=   79715  obj_size=87142  pages=1.69593e+06
+  anon_vma_chain                 objects=   48137  obj_size=66240  pages=  778466
+  kmalloc-32                     objects=   47435  obj_size=57088  pages=  661125
+  dentry                         objects=   42259  obj_size=76479  pages=  789044
+  kmalloc-8                      objects=   31923  obj_size=41472  pages=  323220
+  filp                           objects=   31233  obj_size=41088  pages=  313306
+  lsm_inode_cache                objects=   28264  obj_size=55016  pages=  379632
+  buffer_head                    objects=   25584  obj_size=31551  pages=  197071
+  kmalloc-96                     objects=   25009  obj_size=32508  pages=  198485
+  anon_vma                       objects=   24949  obj_size=35374  pages=  215465
+  inode_cache                    objects=   21340  obj_size=25450  pages=  132594
+
+[4/6] 页缓存 (Cached) 按目录分布
+  扫描中，约需 1-2 分钟...
+
+  (系统总页缓存: 622 MB, 以下为逐目录扫描)
+
+  /var/log (日志)              12 文件有缓存       39 MB
+  /usr/lib (系统库)          985 文件有缓存      267 MB
+  /usr/share (共享数据)     417 文件有缓存       32 MB
+  /opt (第三方应用)        129 文件有缓存      127 MB
+  /home (用户数据)           77 文件有缓存        1 MB
+  /var/cache (应用缓存)      33 文件有缓存        1 MB
+  /var/lib (运行时数据)       7 文件有缓存        2 MB
+  /etc (配置文件)            72 文件有缓存        0 MB
+
+[5/6] 页缓存中最大的文件 TOP 20 (扫描 /var /usr /opt)
+     29.5 MB  (   7540 页)  /var/log/journal/7126aebd61684517a60f6a33de13043c/system.journal
+     22.0 MB  (   5630 页)  /opt/apps/todesk/bin/ToDesk
+     12.6 MB  (   3219 页)  /usr/lib/libgdal.so.26.0.4
+     12.1 MB  (   3094 页)  /var/log/journal/7126aebd61684517a60f6a33de13043c/user-1000.journal
+      9.5 MB  (   2427 页)  /opt/apps/todesk/bin/ToDesk_Service
+      8.2 MB  (   2101 页)  /usr/lib/x86_64-linux-gnu/librsvg-2.so.2.47.0
+      7.8 MB  (   1991 页)  /usr/lib/kylin-daemon/kylin-proxy
+      7.6 MB  (   1949 页)  /usr/lib/x86_64-linux-gnu/libgtk-3.so.0.2404.19
+      7.1 MB  (   1810 页)  /opt/qaxsafe/sqaxsafeforcnos_5
+      7.1 MB  (   1806 页)  /usr/lib/x86_64-linux-gnu/dri/cx4_vndri.so
+      6.2 MB  (   1590 页)  /opt/apps/todesk/bin/libzrtc.so
+      6.2 MB  (   1584 页)  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.12
+      5.8 MB  (   1491 页)  /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.12
+      5.2 MB  (   1339 页)  /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.12
+      4.8 MB  (   1239 页)  /usr/lib/x86_64-linux-gnu/libQt5Quick.so.5.12.12
+      4.7 MB  (   1195 页)  /usr/lib/x86_64-linux-gnu/libQt5Qml.so.5.12.12
+      4.6 MB  (   1188 页)  /opt/qaxsafe/Frameworks/asframeworkmisc.so
+      4.4 MB  (   1127 页)  /opt/qaxsafe/Frameworks/asipcendpoint.so
+      4.3 MB  (   1091 页)  /usr/lib/x86_64-linux-gnu/libukui-kwin.so.1.0.0
+      4.2 MB  (   1079 页)  /opt/qaxsafe/Frameworks/libEntDefenseBase2.so
+
+[6/6] 进程情况
+
+  --- 打开文件数 TOP 15 (进程) ---
+  (打开文件多 → 消耗大量 dentry/inode slab 缓存)
+    12014 个文件  qaxsafed
+     9324 个文件  peony
+     8568 个文件  peony-qt-
+     6856 个文件  avserver
+     6370 个文件  sqaxsafef
+     5742 个文件  kylin-os-
+     5104 个文件  ToDesk
+     5085 个文件  ukui-sett
+     4472 个文件  ukui-kwin
+     4433 个文件  ukui-sear
+     3744 个文件  kylin-pri
+     3045 个文件  sogouImeS
+     2961 个文件  kylin-wea
+     2862 个文件  biometric
+     2400 个文件  qaxtray_5
+
+  --- 内存占用 TOP 15 (RSS) ---
+  PID    USER                   %MEM RSS(MB) COMMAND
+  3653   ky2503r+               1.3%    202  /opt/apps/todesk/bin/ToDesk
+  8485   ky2503r+               1.0%    168  /usr/bin/peony
+  3161   ky2503r+               1.0%    162  /usr/bin/peony-qt-desktop
+  3140   ky2503r+               0.7%    121  /usr/bin/ukui-kwin_x11
+  3714   ky2503r+               0.7%    119  /usr/bin/kylin-weather
+  1419   root                   0.6%    103  /usr/sbin/antivirus/avserver
+  1720   root                   0.6%     95  /opt/qaxsafe/qaxsafed
+  3149   ky2503r+               0.5%     92  /usr/bin/ukui-settings-daemon
+  4934   ky2503r+               0.5%     84  /opt/qaxsafe/sqaxsafeforcnos_5
+  1484   root                   0.5%     84  /usr/lib/biometric-authentication/biometric-authenticationd
+  3725   ky2503r+               0.5%     81  /usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1
+  2382   ky2503r+               0.5%     80  /usr/bin/python3
+  1693   root                   0.5%     77  /usr/lib/xorg/Xorg
+  3697   ky2503r+               0.4%     76  /usr/bin/kylin-printer-applet
+  3789   ky2503r+               0.4%     72  /usr/bin/ukui-search
+
+========================================
+  分析完成
+========================================
+
+  关键数字:
+    总 buff/cache:   715 MB
+    - Buffers:       14 MB (块设备缓冲)
+    - SReclaimable:  79 MB (dentry/inode slab)
+    - Cached:        622 MB (文件页缓存)
+
+  页缓存主要消耗者是上面[4/6]扫描结果中最大的目录。
+  如需释放缓存: echo 3 > /proc/sys/vm/drop_caches
+  (仅释放内存副本，不删除磁盘文件)
+root@ky2503rc2-pc:/home/ky2503rc2/桌面# 
+
+
